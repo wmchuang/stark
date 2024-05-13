@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="LLamaSharp.semantic-kernel" Version="0.10.0" />
+        <PackageReference Include="Microsoft.KernelMemory.Core" Version="0.34.240313.1" />
+        <PackageReference Include="Microsoft.KernelMemory.MemoryDb.Postgres" Version="0.34.240313.1" />
+<!--        <PackageReference Include="Microsoft.SemanticKernel" Version="1.5.0" />-->
+<!--        <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.5.0" />-->
+<!--        <PackageReference Include="Microsoft.SemanticKernel.Planners.Handlebars" Version="1.5.0-preview" />-->
+<!--        <PackageReference Include="Microsoft.SemanticKernel.Planners.OpenAI" Version="1.5.0-preview" />-->
+<!--        <PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.5.0-alpha" />-->
+<!--        <PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.5.0-alpha" />-->
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.DDD\Stark.Starter.DDD.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Redis\Stark.Starter.Redis.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Web\Stark.Starter.Web.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Work.Weixin\Stark.Starter.Work.Weixin.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark\Stark.csproj" />
+    </ItemGroup>
+    
+</Project>

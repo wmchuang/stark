@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <CapVersion>7.2.1</CapVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DotNetCore.CAP" Version="$(CapVersion)" />
+      <PackageReference Include="DotNetCore.CAP.Dashboard" Version="$(CapVersion)" />
+      <PackageReference Include="DotNetCore.CAP.MySql" Version="$(CapVersion)" />
+      <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="$(CapVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Stark.Starter.Core\Stark.Starter.Core.csproj" />
+    </ItemGroup>
+
+</Project>

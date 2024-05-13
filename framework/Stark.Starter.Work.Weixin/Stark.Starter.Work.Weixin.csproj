@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Options" Version="8.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Stark.Starter.Core\Stark.Starter.Core.csproj" />
+      <ProjectReference Include="..\Stark.Starter.Redis\Stark.Starter.Redis.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Client\" />
+    </ItemGroup>
+
+</Project>

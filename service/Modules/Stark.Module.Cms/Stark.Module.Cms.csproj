@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.DDD\Stark.Starter.DDD.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Web\Stark.Starter.Web.csproj" />
+    </ItemGroup>
+
+</Project>

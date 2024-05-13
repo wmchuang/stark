@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Stark.Core": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:30354;http://localhost:30355"
+    }
+  }
+}

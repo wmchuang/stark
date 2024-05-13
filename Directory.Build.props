@@ -1,0 +1,15 @@
+﻿<Project>
+    <PropertyGroup>
+        <Version>0.1.3-preview</Version>
+        <Authors>Wang Chuang</Authors>
+        <PackageId>$(AssemblyName)</PackageId>
+        <Copyright>© Stark Corporation. All rights reserved.</Copyright>
+        <RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://gitee.com/CRole/stark</PackageProjectUrl>
+		<RepositoryUrl>https://gitee.com/CRole/stark</RepositoryUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <TargetFramework>net7.0</TargetFramework>
+		<PackageTags>Stark</PackageTags>
+		<Description>Stark 框架</Description>
+    </PropertyGroup>
+</Project>

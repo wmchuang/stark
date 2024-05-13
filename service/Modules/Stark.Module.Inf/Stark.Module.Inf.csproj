@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Cap\Stark.Starter.Cap.csproj" />
+      <ProjectReference Include="..\..\..\framework\Stark.Starter.Web\Stark.Starter.Web.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Aliyun.OSS.SDK.NetCore" Version="2.13.0" />
+    </ItemGroup>
+
+</Project>

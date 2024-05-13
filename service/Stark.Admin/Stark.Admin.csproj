@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <NoWarn>1701;1702;1591</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <NoWarn>1701;1702;1591</NoWarn>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\framework\Stark.Starter.Web\Stark.Starter.Web.csproj" />
+      <ProjectReference Include="..\Modules\Stark.Module.AI\Stark.Module.AI.csproj" />
+      <ProjectReference Include="..\Modules\Stark.Module.Inf\Stark.Module.Inf.csproj" />
+      <ProjectReference Include="..\Modules\Stark.Module.System\Stark.Module.System.csproj" />
+      <ProjectReference Include="..\Modules\Stark.Module.Test\Stark.Module.Test.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AgileConfig.Client" Version="1.7.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+</Project>
