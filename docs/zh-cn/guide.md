@@ -47,7 +47,7 @@ Stark
 
 ## Starter和 Module
 
-`Start`其实也是个`Module`，但功能上有些许区别
+`Starter`其实也是个`Module`，但功能上有些许区别
 
 - Starter属于框架模块，提供通用的基础架构功能
 
