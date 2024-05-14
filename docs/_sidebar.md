@@ -26,7 +26,7 @@
 * [应用程序模块 Module](./zh-cn/module.md)
 
   * [System Module](./zh-cn/systemModule.md)
-  * [AI Module](./zh-cn/todo.md)
+  * [AI Module](./zh-cn/aiModule.md)
   * [Inf Module](./zh-cn/todo.md)
   * [Test Module](./zh-cn/testModule.md)
 
