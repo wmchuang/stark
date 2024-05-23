@@ -8,4 +8,4 @@
       - /home/data/stark/wiki:/app/wiki #配置数据库磁盘挂载
       - /home/data/stark/stark.db:/app/stark.db #配置数据库磁盘挂载
     ports:
-      - '13305:80'
+      - '8881:80'
