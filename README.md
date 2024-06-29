@@ -6,7 +6,7 @@ Stark是一个极简化的ASP.NET Core应用框架，基于Abp.NET，只引入�
 
 [文档地址](https://wmchuang.github.io/stark/#/)
 
-[体验地址](http://47.116.195.132:13307/)
+[体验地址](http://47.116.195.132:8888/)
 
 ## ⭐特点
 
@@ -33,7 +33,3 @@ Stark是一个极简化的ASP.NET Core应用框架，基于Abp.NET，只引入�
 适用于需要快速搭建RESTful API的Web应用，特别是那些需要模块化、懒加载、属性注入等功能的项目。同时，Stark也适用于需要简化开发过程和提升开发效率的场景。
 
 
-## Todo
-- [ swagger模块分组]
-- [job]
-- [mq 延时队列]
