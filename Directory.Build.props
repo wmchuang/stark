@@ -8,7 +8,9 @@
 		<PackageProjectUrl>https://gitee.com/CRole/stark</PackageProjectUrl>
 		<RepositoryUrl>https://gitee.com/CRole/stark</RepositoryUrl>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
 		<PackageTags>Stark</PackageTags>
 		<Description>Stark 框架</Description>
     </PropertyGroup>
