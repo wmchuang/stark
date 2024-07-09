@@ -18,6 +18,8 @@ builder.Host.UseAgileConfig(
 // 添加AdminModule应用程序服务
 await builder.Services.AddApplicationAsync<AdminModule>();
 
+// Add service defaults & Aspire components.
+builder.AddServiceDefaults();
 
 // 构建WebApplication
 var app = builder.Build();
