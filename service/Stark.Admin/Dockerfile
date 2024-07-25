@@ -1,9 +1,10 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+EXPOSE 8081
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["service/Stark.Admin/Stark.Admin.csproj", "service/Stark.Admin/"]
@@ -19,6 +20,7 @@ COPY ["framework/Stark.Starter.Cap/Stark.Starter.Cap.csproj", "framework/Stark.S
 COPY ["service/Modules/Stark.Module.System/Stark.Module.System.csproj", "service/Modules/Stark.Module.System/"]
 COPY ["service/Modules/Stark.Module.Test/Stark.Module.Test.csproj", "service/Modules/Stark.Module.Test/"]
 COPY ["framework/Stark.Starter.Job/Stark.Starter.Job.csproj", "framework/Stark.Starter.Job/"]
+COPY ["framework/Stark.Starter.Aspire/Stark.Starter.Aspire.csproj", "framework/Stark.Starter.Aspire/"]
 RUN dotnet restore "service/Stark.Admin/Stark.Admin.csproj"
 COPY . .
 WORKDIR "/src/service/Stark.Admin"
@@ -31,7 +33,6 @@ RUN dotnet publish "Stark.Admin.csproj" -c $BUILD_CONFIGURATION -o /app/publish 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-
 
 RUN rm -f /etc/localtime \
 && ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
